@@ -131,7 +131,8 @@ table {
 /*---------------google reset----------------*/
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
@@ -227,7 +228,7 @@ body {
 }
 /* slut på intruduction til hjemmesiden fra toadie */
 
-/* start på artikel linje */
+/* start på artikel linje på forside */
 .artikler {
   display: flex;
   align-items: center;
@@ -264,14 +265,25 @@ body {
 .footer {
   display: flex;
   justify-content: space-between;
-  clear: both;
   width: 100%;
   background-color: #b7daab;
   color: #7cb5d3;
   align-items: center;
-  position: absolute;
   bottom: 0;
   padding: 10px;
+  margin-top: 2px;
+  height: 50px;
+  z-index: -1;
+  position: fixed;
+  margin-top: auto;
+  /*Footer is fucked
+    kan ikke stoppe den
+    fra at gå over mit
+    content på siden
+    har forsøgt flere
+    gang at fikse det
+    fungere ikke
+    ligemeget hvad*/
 }
 
 .sociale {
@@ -282,9 +294,78 @@ body {
 
 /* slut på footer */
 
-/* linking style */
+/* style af links */
 a {
   text-decoration: none;
   color: #7cb5d3;
   list-style: none;
 }
+
+/* Style til produktions artikel */
+.produktion-artikel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titel {
+  display: flex;
+  flex-direction: row;
+}
+
+.bigtitel {
+  color: #7cb5d3;
+  font-size: 45px;
+}
+
+.minititel {
+  color: #7cb5d3;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.artikelimg {
+  width: 300px;
+  height: auto;
+}
+
+.midimg {
+  display: flex;
+  justify-content: center;
+}
+
+.pro-img {
+  width: 500px;
+  height: auto;
+}
+
+.pro-text {
+  display: flex;
+  justify-content: center;
+  color: #7cb5d3;
+  flex-direction: column;
+  max-width: 33%;
+}
+
+.byline {
+  font-size: 10px;
+}
+
+.Passion,
+.Forskning,
+.optag,
+.Konsistens {
+  width: 400px;
+  height: auto;
+}
+
+.Passion1,
+.Forskning1,
+.optag1,
+.Konsistens1 {
+  display: flex;
+  justify-content: center;
+}
+/* slut på Style til produktions artikel */
