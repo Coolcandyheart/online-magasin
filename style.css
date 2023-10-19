@@ -312,6 +312,7 @@ a {
 .titel {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .bigtitel {
@@ -369,3 +370,10 @@ a {
   justify-content: center;
 }
 /* slut på Style til produktions artikel */
+
+
+.disconly-fakta {
+  display: block;
+  border: 1px solid black;
+  background-color:#c5e0a6;
+}
