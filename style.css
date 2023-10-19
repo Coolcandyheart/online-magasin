@@ -291,7 +291,6 @@ body {
   height: auto;
   padding-right: 10px;
 }
-
 /* slut på footer */
 
 /* style af links */
@@ -301,7 +300,11 @@ a {
   list-style: none;
 }
 
-/* Style til produktions artikel */
+/* Style til alle artikler
+startede dog med produktion
+så navnene (class) passer
+bedst der til men bliver brugt
+til alle 3 artikler*/
 .produktion-artikel {
   display: flex;
   justify-content: center;
@@ -369,7 +372,6 @@ a {
   display: flex;
   justify-content: center;
 }
-/* slut på Style til produktions artikel */
 
 
 .disconly-fakta {
@@ -377,3 +379,4 @@ a {
   border: 1px solid black;
   background-color:#c5e0a6;
 }
+/* slut på Style til artikler*/
